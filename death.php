@@ -3,18 +3,18 @@ include('functions.php');
 ?>
 
 <head>
-    <title>Death Certificate</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Death</title>
 </head>
 <body>
     <div class="header">
-        <h2>Death Certificate</h2>
+        <h2>Death of Individual</h2>
     </div>
  
 <div class = "content">
 
 <?php 
-    echo "<p><a href='home.php? '' style= 'color: purple;'>Home Page</a></p>";
+	echo "<p>To return to the home page, click the link below:</p>";
+    echo "<p><a href='home.php? '' style= 'color: blue;'>Home Page</a></p>";
 ?>
 </div>
 <?php

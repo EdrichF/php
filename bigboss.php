@@ -4,7 +4,6 @@ include('functions.php');
 ?>
 <head>
 <title>Search</title>
-<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 <div class="header">

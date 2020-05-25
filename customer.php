@@ -2,19 +2,17 @@
 include('functions.php');    
 ?>
 <head>
-<title>Search</title>
-<link rel="stylesheet" type="text/css" href="style.css">
+<title>Individual Details</title>
 </head>
 <body>
 <div class="header">
-        <h2>Personal Information
-        </h2>
+        <h2>Details on individual</h2>
 </div>
  
 <div class = "content">
 <?php 
-        echo "You got READ ACCESS";
-        echo "<p><a href='home.php? '' style= 'color: purple;'>Home Page</a></p>";  
+        echo "Read access only. To return to the home page, click the link below:";
+        echo "<p><a href='home.php? '' style= 'color: blue;'>Home Page</a></p>";  
 ?>
 </div>
 <?php

@@ -1,20 +1,20 @@
-<?php include('server.php');
+<?php include('host.php');
     include('functions.php');
 ?>
 <!DOCTYPE html>
 <html>
 <head>
-    <title>COVID-19 STATUS</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>COVID-19 Status</title>
 </head>
 <body>
     <div class="header">
-        <h2>COVID-19 STATUS</h2>
+        <h2>COVID-19 Status</h2>
     </div>
  
 <div class = "content">
 <?php 
-        echo "<p><a href='home.php? '' style= 'color: purple;'>Home Page</a></p>";
+		echo "<p>The current statistics regarding the pandemic can be found below. To return to the home page, click the link below:</p>";
+        echo "<p><a href='home.php? '' style= 'color: blue;'>Home Page</a></p>";
 
 ?>
 
