@@ -20,7 +20,7 @@ if (isset($_GET['id'])) {
 <div class = "content">
 
 <?php 
-    $dbinfo = mysqli_connect('localhost','appels','komkommers','medicaldatabase');
+    $dbinfo = mysqli_connect('localhost','appels','Komkommers@123','medicaldatabase');
     $sql = "SELECT * FROM population WHERE username = '$user'";
     $result = mysqli_query($dbinfo, $sql);
     while($row = mysqli_fetch_array($result)){         

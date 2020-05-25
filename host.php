@@ -4,7 +4,7 @@
     $email = "";
     $errors = array();
 
-    if ($db = mysqli_connect('localhost','appels','komkommers','medicaldatabase')){
+    if ($db = mysqli_connect('localhost','appels','Komkommers@123','medicaldatabase')){
         echo "Connected to database.";
     }else{
         echo"Connection to database failed.";

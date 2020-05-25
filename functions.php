@@ -2,7 +2,7 @@
 
 function personalinfoe ($id){
     echo "<form method= 'post' action='home.php' enctype='multipart/form-data'>";
-    $dbimage = mysqli_connect('localhost','appels','komkommers','medicaldatabase');
+    $dbimage = mysqli_connect('localhost','appels','Komkommers@123','medicaldatabase');
     $sql = "SELECT * FROM population WHERE username = '$id'";
     $result = mysqli_query($dbimage, $sql);
     $today = date("Y-m-d");
@@ -48,7 +48,7 @@ function personalinfoe ($id){
 }
 function personalinfobigboss($id){
     echo "<form method= 'post' action='home.php' enctype='multipart/form-data'>";
-    $dbimage = mysqli_connect('localhost','appels','komkommers','medicaldatabase');
+    $dbimage = mysqli_connect('localhost','appels','Komkommers@123','medicaldatabase');
     $sql = "SELECT * FROM population WHERE username = '$id'";
     $result = mysqli_query($dbimage, $sql);
     $today = date("Y-m-d");
@@ -101,7 +101,7 @@ function bigboss($id){
 }
 function medicalaid($id){
     echo "<form method= 'post' enctype='multipart/form-data'>";
-    $dbimage = mysqli_connect('localhost','appels','komkommers','medicaldatabase');
+    $dbimage = mysqli_connect('localhost','appels','Komkommers@123','medicaldatabase');
     $sql = "SELECT * FROM population WHERE username = '$id'";
     $result = mysqli_query($dbimage, $sql);
     while($row = mysqli_fetch_array($result)){
@@ -122,7 +122,7 @@ function medicalaid($id){
 }
 function diseases($id){
     echo "<form method= 'post' action='home.php' enctype='multipart/form-data'>";
-    $dbimage = mysqli_connect('localhost','appels','komkommers','medicaldatabase');
+    $dbimage = mysqli_connect('localhost','appels','Komkommers@123','medicaldatabase');
     $sql = "SELECT * FROM population WHERE username = '$id'";
     $result = mysqli_query($dbimage, $sql);
     while($row = mysqli_fetch_array($result)){
@@ -136,7 +136,7 @@ function diseases($id){
 }
 function personalinfo ($id){
     echo "<form method= 'post' action='home.php' enctype='multipart/form-data'>";
-    $dbimage = mysqli_connect('localhost','appels','komkommers','medicaldatabase');
+    $dbimage = mysqli_connect('localhost','appels','Komkommers@123','medicaldatabase');
     $sql = "SELECT * FROM population WHERE username = '$id'";
     $result = mysqli_query($dbimage, $sql);
     $today = date("Y-m-d");
@@ -296,7 +296,7 @@ function certificates (){
     echo "</div>";
 }
 function selectwerk($id){
-    $dbsearch = mysqli_connect('localhost','appels','komkommers','medicaldatabase');
+    $dbsearch = mysqli_connect('localhost','appels','Komkommers@123','medicaldatabase');
     $sql = "SELECT * FROM population WHERE username = '$id'";
     $result = mysqli_query($dbsearch, $sql);
     while($row = mysqli_fetch_array($result)){
@@ -324,7 +324,7 @@ function selectwerk($id){
         }
 }
 function tablegenerator ($id) {
-    $dbmedical = mysqli_connect('localhost','appels','komkommers','medicaldatabase');
+    $dbmedical = mysqli_connect('localhost','appels','Komkommers@123','medicaldatabase');
     $sql = "SELECT * FROM medicalhistory WHERE id = '$id'";
     $result = mysqli_query($dbmedical, $sql);
     ?>
@@ -363,7 +363,7 @@ function tablegenerator ($id) {
             <th>Number of Repetitions</th>
         </tr>
     <?php
-    $dbmedical = mysqli_connect('localhost','appels','komkommers','medicaldatabase');
+    $dbmedical = mysqli_connect('localhost','appels','Komkommers@123','medicaldatabase');
     $sql = "SELECT * FROM medicalhistory WHERE id = '$id'";
     $result = mysqli_query($dbmedical, $sql);
     while($row = mysqli_fetch_assoc($result)){
@@ -373,7 +373,7 @@ function tablegenerator ($id) {
     echo "</table>";
 }
 function tablegeneratorphar($idpat,$iduser){
-    $dbmedical = mysqli_connect('localhost','appels','komkommers','medicaldatabase');
+    $dbmedical = mysqli_connect('localhost','appels','Komkommers@123','medicaldatabase');
     $sql = "SELECT * FROM medicalhistory WHERE id = '$idpat'";
     $result = mysqli_query($dbmedical, $sql);
     ?>
@@ -412,7 +412,7 @@ function tablegeneratorphar($idpat,$iduser){
             <th>Number of Repetitions</th>
         </tr>
     <?php
-    $dbmedical = mysqli_connect('localhost','appels','komkommers','medicaldatabase');
+    $dbmedical = mysqli_connect('localhost','appels','Komkommers@123','medicaldatabase');
     $sql = "SELECT * FROM medicalhistory WHERE id = '$idpat'";
     $result = mysqli_query($dbmedical, $sql);
     while($row = mysqli_fetch_assoc($result)){
@@ -433,7 +433,7 @@ function tablegeneratorphar($idpat,$iduser){
     }
 }
 function tablegeneratorpath($idpat,$iduser){
-    $dbmedical = mysqli_connect('localhost','appels','komkommers','medicaldatabase');
+    $dbmedical = mysqli_connect('localhost','appels','Komkommers@123','medicaldatabase');
     $sql = "SELECT * FROM medicalhistory WHERE id = '$idpat'";
     $result = mysqli_query($dbmedical, $sql);
     ?>
@@ -466,7 +466,7 @@ function tablegeneratorpath($idpat,$iduser){
             <th>Lab Results</th>
         </tr>
     <?php
-    $dbmedical = mysqli_connect('localhost','appels','komkommers','medicaldatabase');
+    $dbmedical = mysqli_connect('localhost','appels','Komkommers@123','medicaldatabase');
     $sql = "SELECT * FROM medicalhistory WHERE id = '$idpat'";
     $result = mysqli_query($dbmedical, $sql);
     while($row = mysqli_fetch_assoc($result)){
@@ -476,7 +476,7 @@ function tablegeneratorpath($idpat,$iduser){
     echo "</table>";
 }
 function check($id){
-    $dbcheck = mysqli_connect('localhost','appels','komkommers','medicaldatabase');
+    $dbcheck = mysqli_connect('localhost','appels','Komkommers@123','medicaldatabase');
     $sql = "SELECT * FROM population WHERE username = '$id'";
     $result = mysqli_query($dbcheck, $sql);
     while($row = mysqli_fetch_array($result)){
@@ -492,7 +492,7 @@ function check($id){
 function unemployededit ($id){
     echo "<label>Edit details below and submit the changes:</label>";
     
-    $dbimage = mysqli_connect('localhost','appels','komkommers','medicaldatabase');
+    $dbimage = mysqli_connect('localhost','appels','Komkommers@123','medicaldatabase');
         $sql = "SELECT * FROM population WHERE username = '$id'";
         $result = mysqli_query($dbimage, $sql);
         while($row = mysqli_fetch_array($result)){
@@ -552,7 +552,7 @@ function addnew() {
     $race = $_POST['race'];
     $gender = $_POST['gender'];
     echo "$id";
-    $dbedit = mysqli_connect('localhost','appels','komkommers','medicaldatabase');
+    $dbedit = mysqli_connect('localhost','appels','Komkommers@123','medicaldatabase');
     $sql = "SELECT * FROM population WHERE username = '$id'";
     $result = mysqli_query($dbedit, $sql);
     $row = mysqli_fetch_array($result);
@@ -604,7 +604,7 @@ function addnewmed(){
     $labresults = "";
     $icd10code = $_POST['icd10code'];
     $today = date('Y-m-d');
-    $dbedit = mysqli_connect('localhost','appels','komkommers','medicaldatabase');
+    $dbedit = mysqli_connect('localhost','appels','Komkommers@123','medicaldatabase');
     $sql = "INSERT INTO medicalhistory (id,condate,physician,practicenumber,symptoms,labtests,labresults,icd10code,prescription,numberofrep)
     VALUES('$idpat','$today','$physician','$practicenumber', '$symptoms','$labtests','$labresults','$icd10code','$prescription','$numberofrepetitions')";
     if(mysqli_query($dbedit, $sql)){
@@ -634,7 +634,7 @@ function updatemed(){
     $labresults = "";
     $icd10code = $_POST['icd10code'];
     $today = date('Y-m-d');
-    $dbedit = mysqli_connect('localhost','appels','komkommers','medicaldatabase');
+    $dbedit = mysqli_connect('localhost','appels','Komkommers@123','medicaldatabase');
     $sql = "SELECT * FROM medicalhistory WHERE id = '$idpat' and condate = '$condate'";
     $result = mysqli_query($dbedit, $sql);
     $row = mysqli_fetch_array($result);
@@ -729,7 +729,7 @@ function birthcertificate(){
     $authgov = 0;
     $authphar = 0;
     $authpath = 0;
-    $dbbirth = mysqli_connect('localhost','appels','komkommers','medicaldatabase');
+    $dbbirth = mysqli_connect('localhost','appels','Komkommers@123','medicaldatabase');
     $sql = "INSERT INTO population (username,password,surname,name,dob,gender,race,occupation,street,suburb,city,phonenumber,email,medical,membershipnumber,medicalplan,diseases,authdoc,authpath,authgov,authphar)
     VALUES('$id','$password','$surname', '$name','$dob','$gender','$race','$occupation', '$street','$subburb','$city', '$phonenumber','$email','$medical','$membershipnumber','$medicalplan','$diseases','$authdoc','$authpath','$authgov','$authphar')";
     if(mysqli_query($dbbirth, $sql)){
@@ -743,7 +743,7 @@ function deathcertificate(){
     searchtokill();
     if (isset($_POST['Searchhr'])){
         $id = $_POST['Searchhr'];
-    $dbimage = mysqli_connect('localhost','appels','komkommers','medicaldatabase');
+    $dbimage = mysqli_connect('localhost','appels','Komkommers@123','medicaldatabase');
     $sql = "SELECT * FROM population WHERE username = '$id'";
     $result = mysqli_query($dbimage, $sql);
     $today = date("Y-m-d");
@@ -794,7 +794,7 @@ function deathcertificate(){
     }
     if (isset($_POST['kill'])){
         $id = $_POST['id'];
-        $dbbirth = mysqli_connect('localhost','appels','komkommers','medicaldatabase');
+        $dbbirth = mysqli_connect('localhost','appels','Komkommers@123','medicaldatabase');
         $sql = "DELETE FROM population WHERE username = '$id'";
         if(mysqli_query($dbbirth, $sql)){
              echo "Deseased details removed.";
@@ -804,7 +804,7 @@ function deathcertificate(){
         }
 }
 function check21 ($id){
-    $dbcheck = mysqli_connect('localhost','appels','komkommers','medicaldatabase');
+    $dbcheck = mysqli_connect('localhost','appels','Komkommers@123','medicaldatabase');
     $sql = "SELECT * FROM population WHERE username = '$id'";
     $result = mysqli_query($dbcheck, $sql);
     while($row = mysqli_fetch_array($result)){
@@ -817,7 +817,7 @@ function check21 ($id){
     return $age;
 }
 function displayname($id){
-    $dbcheck = mysqli_connect('localhost','appels','komkommers','medicaldatabase');
+    $dbcheck = mysqli_connect('localhost','appels','Komkommers@123','medicaldatabase');
     $sql = "SELECT * FROM population WHERE username = '$id'";
     $result = mysqli_query($dbcheck, $sql);
     while($row = mysqli_fetch_array($result)){
@@ -827,7 +827,7 @@ function displayname($id){
 function addmedicalhistory($idpat,$iduser){
 
     echo "<label>Add new medical history</label><br><b><label style = 'color:red'>**Must Be ENTERED</label></b>";
-    $dbimage = mysqli_connect('localhost','appels','komkommers','medicaldatabase');
+    $dbimage = mysqli_connect('localhost','appels','Komkommers@123','medicaldatabase');
     $sql = "SELECT * FROM population WHERE username = '$iduser'";
     $result = mysqli_query($dbimage, $sql);
     while($row = mysqli_fetch_array($result)){
@@ -886,7 +886,7 @@ function addmedicalhistory($idpat,$iduser){
             echo "</div>";
     }     
     echo "<label>Update medical history</label><br><b><label style = 'color:red'>**Must Be ENTERED</label></b>";
-    $dbimage = mysqli_connect('localhost','appels','komkommers','medicaldatabase');
+    $dbimage = mysqli_connect('localhost','appels','Komkommers@123','medicaldatabase');
     $sql = "SELECT * FROM population WHERE username = '$iduser'";
     $result = mysqli_query($dbimage, $sql);
     while($row = mysqli_fetch_array($result)){
@@ -1004,7 +1004,7 @@ function updatepathology($idpat,$iduser){
 function updatediseases(){
     $idpat = $_POST['idpat'];
     $disease = $_POST['disease'];
-    $dbedit = mysqli_connect('localhost','appels','komkommers','medicaldatabase');
+    $dbedit = mysqli_connect('localhost','appels','Komkommers@123','medicaldatabase');
     $sql = "SELECT * FROM population WHERE username = '$idpat'";
     $result = mysqli_query($dbedit, $sql);
     $row = mysqli_fetch_array($result);
@@ -1032,7 +1032,7 @@ function addupdatepathology(){
     $condate =  $_POST['condate'];
     $labtests = $_POST['labtest'];
     $labresults = $_POST['labresults'];
-    $dbedit = mysqli_connect('localhost','appels','komkommers','medicaldatabase');
+    $dbedit = mysqli_connect('localhost','appels','Komkommers@123','medicaldatabase');
     $sql = "SELECT * FROM medicalhistory WHERE id = '$idpat' and condate = '$condate'";
     $result = mysqli_query($dbedit, $sql);
     $row = mysqli_fetch_array($result);
@@ -1066,7 +1066,7 @@ function addmedicalbutton ($id){
 
 }
 function premissionmedical($idpat){
-    $dbimage = mysqli_connect('localhost','appels','komkommers','medicaldatabase');
+    $dbimage = mysqli_connect('localhost','appels','Komkommers@123','medicaldatabase');
     $sql = "SELECT * FROM population WHERE username = '$idpat'";
     $result = mysqli_query($dbimage, $sql);
     while($row = mysqli_fetch_array($result)){
@@ -1079,7 +1079,7 @@ function premissionmedical($idpat){
     }
 }
 function premissionpathology($idpat){
-    $dbimage = mysqli_connect('localhost','appels','komkommers','medicaldatabase');
+    $dbimage = mysqli_connect('localhost','appels','Komkommers@123','medicaldatabase');
     $sql = "SELECT * FROM population WHERE username = '$idpat'";
     $result = mysqli_query($dbimage, $sql);
     while($row = mysqli_fetch_array($result)){
@@ -1092,7 +1092,7 @@ function premissionpathology($idpat){
     }
 }
 function premissionpharmacist($idpat){
-    $dbimage = mysqli_connect('localhost','appels','komkommers','medicaldatabase');
+    $dbimage = mysqli_connect('localhost','appels','Komkommers@123','medicaldatabase');
     $sql = "SELECT * FROM population WHERE username = '$idpat'";
     $result = mysqli_query($dbimage, $sql);
     while($row = mysqli_fetch_array($result)){
@@ -1105,7 +1105,7 @@ function premissionpharmacist($idpat){
     }
 }
 function premissiongovernment($idpat){
-    $dbimage = mysqli_connect('localhost','appels','komkommers','medicaldatabase');
+    $dbimage = mysqli_connect('localhost','appels','Komkommers@123','medicaldatabase');
     $sql = "SELECT * FROM population WHERE username = '$idpat'";
     $result = mysqli_query($dbimage, $sql);
     while($row = mysqli_fetch_array($result)){
@@ -1122,7 +1122,7 @@ function add() {
     $idpat = $_POST['idpat'];
     $date = $_POST['date'];
     $id = $_POST['id'];
-    $dbdata = mysqli_connect('localhost','appels','komkommers','medicaldatabase');
+    $dbdata = mysqli_connect('localhost','appels','Komkommers@123','medicaldatabase');
     $sql = "UPDATE medicalhistory SET numberofrep = numberofrep  + $adddata WHERE id = '$idpat' AND condate = '$date'";
     if(mysqli_query($dbdata, $sql)){
         echo "Records added successfully.";
@@ -1141,7 +1141,7 @@ function subtract() {
     $idpat = $_POST['idpat'];
     $date = $_POST['date'];
     $id = $_POST['id'];
-    $dbdata = mysqli_connect('localhost','appels','komkommers','medicaldatabase');
+    $dbdata = mysqli_connect('localhost','appels','Komkommers@123','medicaldatabase');
     $sql = "UPDATE medicalhistory SET numberofrep = numberofrep  - $adddata WHERE id = '$idpat' AND condate = '$date'";
     if(mysqli_query($dbdata, $sql)){
         echo "Records added successfully.";
@@ -1158,7 +1158,7 @@ function subtract() {
 function checkboxcheck($id){
     ?>
     <?php
-    $dbcheck = mysqli_connect('localhost','appels','komkommers','medicaldatabase');
+    $dbcheck = mysqli_connect('localhost','appels','Komkommers@123','medicaldatabase');
     $sql = "SELECT * FROM population WHERE username = '$id'";
     $result = mysqli_query($dbcheck, $sql);
     while($row = mysqli_fetch_array($result)){
@@ -1185,7 +1185,7 @@ function checkboxcheck($id){
  
 
     <?php
-    $db = mysqli_connect('localhost','appels','komkommers','medicaldatabase');
+    $db = mysqli_connect('localhost','appels','Komkommers@123','medicaldatabase');
     if(isset($_POST['aut'])){
 
     if(isset($_POST['dokter'])){
@@ -1231,7 +1231,7 @@ function checkboxcheck($id){
 
 }
 function covidnumber(){
-    $dbcheck = mysqli_connect('localhost','appels','komkommers','medicaldatabase');
+    $dbcheck = mysqli_connect('localhost','appels','Komkommers@123','medicaldatabase');
     $bloemfontein = "Bloemfontein";
     $covid19 = "Covid-19";
     $sql = "SELECT COUNT(*) FROM population WHERE (suburb = '$bloemfontein' OR city ='$bloemfontein') AND (diseases = '$covid19') ";
@@ -1541,7 +1541,7 @@ function addroleupdate(){
     $iduser = $_POST['iduser'];
     $idpat = $_POST['idpat'];
     $role =  $_POST['role'];
-    $dbedit = mysqli_connect('localhost','appels','komkommers','medicaldatabase');
+    $dbedit = mysqli_connect('localhost','appels','Komkommers@123','medicaldatabase');
     $sql = "SELECT * FROM medicalhistory WHERE id = '$idpat'";
     $result = mysqli_query($dbedit, $sql);
     $row = mysqli_fetch_array($result);
